@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+    <script src="scripts.js" defer></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="formDisplay">
+      <form id="userRegister" novalidate autocomplete="on">
+        <label for="userName">User Name: </label>
+        <input id="userName" type="text" autofocus required />
+
+        <label for="userCountry"> Three Country Code: </label>
+        <input id="userCountry" type="text" required />
+
+        <label for="userZipCode"> Zip Code: </label>
+        <input id="userZipCode" type="text" required />
+
+        <label for="userPassword"> Password: </label>
+        <input id="userPassword" type="password" required />
+
+        <label for="confirmPassword"> Confirm password: </label>
+        <input id="userConfirmPassword" type="password" disabled required />
+
+        <button id="submit" type="button">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>

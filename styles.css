@@ -1,0 +1,66 @@
+:root {
+  overflow: hidden;
+  background: radial-gradient(circle, #0689fc, #000000);
+}
+
+@keyframes colorChange {
+  from {
+    background-color: #063a52;
+    transform: translateY(60vh);
+  }
+  to {
+    background-color: #0689fc;
+    transform: translateY(0vh);
+  }
+}
+
+#formDisplay {
+  width: 20vw;
+  position: absolute;
+  left: 50%;
+  top: 20vh;
+  transform: translateX(-50%);
+  align-items: center;
+}
+
+#userRegister {
+  padding: 30px;
+  display: flex;
+  border: 2px solid #fff;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #0689fc;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 15);
+  animation: colorChange 2s;
+}
+
+#userRegister > input {
+  border-radius: 8%;
+}
+
+#userRegister > .invalid {
+  border-color: red;
+}
+
+#userRegister > label {
+  font-weight: bolder;
+  color: #fff;
+}
+
+#userRegister > button {
+  padding: 10px 20px;
+  background-color: #ff5733;
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 1em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s;
+}
+
+#userRegister > button:hover {
+  background-color: #ff2a1a;
+}
